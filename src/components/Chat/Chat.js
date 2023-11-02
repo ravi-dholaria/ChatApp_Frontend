@@ -15,7 +15,7 @@ const Chat = () => {
   const [message, setMessage] = useState();
   const [users, setUsers] = useState();
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "http://localhost:8080";
+  const ENDPOINT = "https://chat-app-rzzi.onrender.com";
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
     setName(name);
